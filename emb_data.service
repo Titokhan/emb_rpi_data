@@ -1,0 +1,10 @@
+[Unit]
+Description=EMB Data Dump Service
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/usr/local/bin/grabserial -d '/dev/ttyACM0' -o /home/pi/emb/emb_data.csv
+
+[Install]
+WantedBy=multi-user.target
