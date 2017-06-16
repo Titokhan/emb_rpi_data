@@ -1,4 +1,4 @@
 git add .
 current_time=`date`
-git commit -m "Snaoshot @ $current_time"
+git commit -m "Snapshot @ $current_time"
 git push origin master
